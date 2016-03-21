@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TodoList2.1</string>
+    <string name="title_activity_invite_team_members">inviteTeamMembersActivity</string>
+
+    <string-array name="category">
+        <item>Cleaning</item>
+        <item>Food</item>
+        <item>Fixing</item>
+        <item>Pets</item>
+        <item>Payments</item>
+    </string-array>
+
+    <string-array name="priority">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="acceptanceStatus">
+        <item>Pending</item>
+        <item>Accepted</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="progressStatus">
+        <item>Pending</item>
+        <item>Accepted</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Incompleted</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+</resources>

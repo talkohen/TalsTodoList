@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Name Label -->
+
+    <!-- Input Name -->
+
+    <!-- Price Label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Task Details"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Title :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:layout_gravity="left"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/inputTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:editable="false"
+        android:layout_marginTop="-30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#c2bbbb" />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+
+    <!-- Input Price -->
+
+    <!-- Description Label -->
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/inputCategory"
+        android:layout_gravity="center_horizontal"
+        android:spinnerMode="dropdown"
+        android:entries="@array/category"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priority :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"/>
+
+    <!-- Input description -->
+
+    <!-- Button Create Product -->
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/inputPriority"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-30dp"
+        android:spinnerMode="dropdown"
+        android:entries="@array/priority"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:id="@+id/inputLocation"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:lines="4"
+        android:gravity="top"
+        android:editable="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-40dp"
+        android:textColor="#c2bbbb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/inputDate"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dip"
+        android:lines="4"
+        android:gravity="top"
+        android:editable="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-40dp"
+        android:textColor="#c2bbbb" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:id="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/inputMember"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dip"
+        android:lines="4"
+        android:gravity="top"
+        android:editable="false"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-40dp"
+        android:textColor="#c2bbbb" />
+
+    <Spinner
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:id="@+id/inputAcceptance"
+        android:layout_gravity="center_horizontal"
+        android:spinnerMode="dropdown"
+        android:entries="@array/acceptanceStatus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acceptance :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:id="@+id/textView5"
+        android:layout_marginTop="-40dp" />
+
+    <Spinner
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:id="@+id/inputProgress"
+        android:layout_gravity="center_horizontal"
+        android:spinnerMode="dropdown"
+        android:entries="@array/progressStatus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:id="@+id/textView6"
+        android:layout_marginTop="-40dp" />
+
+    <LinearLayout android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Button Create Product -->
+
+        <!-- Button Create Product -->
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image :"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17dip"
+        android:id="@+id/textView4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Add photo"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:onClick="photoButtonClicked"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="-50dp" />
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:id="@+id/mImageView"
+        android:layout_gravity="right"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="-20dp" />
+
+    <Button android:id="@+id/editButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Save changes"
+        android:onClick="editButtonClicked" />
+
+</LinearLayout>

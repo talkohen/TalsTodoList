@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!-- Main ListView
+         Always give id value as list(@android:id/list)
+    -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="All tasks"
+        android:id="@+id/waitingTextLabel"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Waiting tasks"
+            android:id="@+id/waitingButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="70dp"
+            android:onClick="waitingTasksButtonClicked"
+            android:nestedScrollingEnabled="false"
+            android:background="#c2c2c2" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="All tasks"
+            android:id="@+id/allButton"
+            android:layout_gravity="center_horizontal"
+            android:background="#d4d4d4"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <Button
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="Create Task"
+            android:id="@+id/createTaskButton"
+            android:onClick="createTaskButtonClicked"
+            android:width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#d4d4d4" />
+
+        <Button
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:id="@+id/refreshButton"
+            android:onClick="refreshButtonClicked"
+            android:nestedScrollingEnabled="false"
+            android:width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#c2c2c2" />
+
+        <Button
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="Invite"
+            android:id="@+id/inviteButton"
+            android:background="#d4d4d4"
+            android:onClick="inviteButtonClicked"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:id="@+id/aboutButton"
+            android:background="#c2c2c2"
+            android:onClick="aboutButtonClicked"/>
+    </LinearLayout>
+</LinearLayout>
